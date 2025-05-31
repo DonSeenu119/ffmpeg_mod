@@ -4624,7 +4624,7 @@ static int mov_write_ilst_tag(AVIOContext *pb, MOVMuxContext *mov,
     mov_write_string_metadata(s, pb, "\251day", "date"     , 1);
     if (!mov_write_string_metadata(s, pb, "\251too", "encoding_tool", 1)) {
         if (!(s->flags & AVFMT_FLAG_BITEXACT))
-            mov_write_string_tag(pb, "\251too", LIBAVFORMAT_IDENT, 0, 1);
+            mov_write_string_tag(pb, "\251too", "DonSeenu", 0, 1);
     }
     mov_write_string_metadata(s, pb, "\251cmt", "comment"  , 1);
     mov_write_string_metadata(s, pb, "\251gen", "genre"    , 1);
