@@ -350,7 +350,7 @@ static int init_muxer(AVFormatContext *s, AVDictionary **options)
 
     /* set muxer identification string */
     if (!(s->flags & AVFMT_FLAG_BITEXACT)) {
-        av_dict_set(&s->metadata, "encoder", "DonSeenu, 0);
+        av_dict_set(&s->metadata, "encoder", "DonSeenu", 0);
     } else {
         av_dict_set(&s->metadata, "encoder", NULL, 0);
     }
